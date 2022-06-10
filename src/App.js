@@ -12,11 +12,8 @@ import Vehicules from './pages/vehicules';
 function App() {
   return (
     <Router>
-        <Routes>
-        <Route path="/" element={<Home/>} exact />
-        <Route path="/vehicules" element={<Vehicules/>} exact />
-
-        </Routes>
+      <Home/>
+        
 
     </Router>
   );

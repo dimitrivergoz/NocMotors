@@ -12,15 +12,15 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height:60vh;
-    width: 100%;
+    height:520px;
+    width:100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 0px;
+    padding: 5px 5px;
     justify-content: center;
     @media screen and (max-width: 768px){
-        height:100vh;
+        height:550px;
     }
 
 `
@@ -103,11 +103,11 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    max-width: 550px;
-    margin:0 0 0px -30px;
+    max-width: 700px;
+    margin:0 0 0px 0;
     padding-right: 0;
     border-radius: 4px;
-    @media screen and (max-width: 600px){
-        max-width: 325px;
+    @media screen and (max-width: 1000px){
+        max-width: 100%;
     }
 `

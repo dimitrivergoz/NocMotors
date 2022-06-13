@@ -7,7 +7,7 @@ export const CarouselContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 60vh;
+  height: 600px;
   position: relative;
   z-index:1;
   :before {

@@ -100,16 +100,14 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: auto;
-    height: 100%;
 `
 
 export const Img = styled.img`
-    max-width: 750px;
-    margin: 0 0 10px 0;
+    max-width: 550px;
+    margin:0 0 0px -30px;
     padding-right: 0;
     border-radius: 4px;
-    @media screen and (max-width: 750px){
-        max-width: 450px;
+    @media screen and (max-width: 600px){
+        max-width: 325px;
     }
 `

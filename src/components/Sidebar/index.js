@@ -12,7 +12,7 @@ function Sidebar({isOpen, toggle}) {
                 <SidebarLink to="services"  onClick={toggle}>
                     Services
                 </SidebarLink>
-                <SidebarLink to="/vehicules"  onClick={toggle}>
+                <SidebarLink to="vehicules"  onClick={toggle}>
                     Véhicules
                 </SidebarLink>
                 <SidebarLink to="events"  onClick={toggle}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './Navbar'
 
 const Navbar = ({toggle}) => {
@@ -9,9 +9,9 @@ const Navbar = ({toggle}) => {
     <>
         <Nav>
             <NavbarContainer id="home">
-                
-            {newLocal}
-               
+            <a href="https://google.com" target="_blank" rel="noreferrer">
+                <img src={require('../../images/logo.svg').default} alt="example" />
+                </a>
                 <MobileIcon onClick={toggle}>
                     <FaBars/>
                 </MobileIcon>
@@ -20,7 +20,7 @@ const Navbar = ({toggle}) => {
                         <NavLinks to="services">Services</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/vehicules">Vehicules</NavLinks>
+                        <NavLinks to="vehicules">Vehicules</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="events">Evènements</NavLinks>

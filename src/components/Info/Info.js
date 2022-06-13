@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
     color:#fff;
     background: ${({lightBg}) => (lightBg ? 'white' : 'black')};
-
+    position: relative;
+    padding-top: 15px;
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
@@ -17,7 +18,7 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 5px 5px;
+    padding: 5px 20px;
     justify-content: center;
     @media screen and (max-width: 768px){
         height:550px;

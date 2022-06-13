@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NocMotors/static/css/main.6e203f99.css",
-    "main.js": "/NocMotors/static/js/main.c419c9ca.js",
+    "main.css": "/NocMotors/static/css/main.ba123edd.css",
+    "main.js": "/NocMotors/static/js/main.2d30064d.js",
     "static/js/787.1b323013.chunk.js": "/NocMotors/static/js/787.1b323013.chunk.js",
     "static/media/video.mp4": "/NocMotors/static/media/video.a463d17af79e78752e73.mp4",
     "static/media/1.jpg": "/NocMotors/static/media/1.3f4661b63fc753603d9f.jpg",
@@ -11,12 +11,12 @@
     "static/media/1.svg": "/NocMotors/static/media/1.2dcad10c17297a62707a5cc570639bdd.svg",
     "static/media/logo.svg": "/NocMotors/static/media/logo.1d30110ec9b9a5985a84e3bb3e72df92.svg",
     "index.html": "/NocMotors/index.html",
-    "main.6e203f99.css.map": "/NocMotors/static/css/main.6e203f99.css.map",
-    "main.c419c9ca.js.map": "/NocMotors/static/js/main.c419c9ca.js.map",
+    "main.ba123edd.css.map": "/NocMotors/static/css/main.ba123edd.css.map",
+    "main.2d30064d.js.map": "/NocMotors/static/js/main.2d30064d.js.map",
     "787.1b323013.chunk.js.map": "/NocMotors/static/js/787.1b323013.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e203f99.css",
-    "static/js/main.c419c9ca.js"
+    "static/css/main.ba123edd.css",
+    "static/js/main.2d30064d.js"
   ]
 }

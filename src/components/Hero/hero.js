@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { keyframes } from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
-
+import { Link as LinkS } from 'react-scroll'
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display:flex;
@@ -99,3 +100,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+
+export const HeroDivSvg = styled.div`
+  margin-top: 10%;
+  animation: ping;
+  width: 4rem;
+  
+`
+export const NavLinks = styled(LinkS)`
+    color:#fff;
+    cursor: pointer;
+`

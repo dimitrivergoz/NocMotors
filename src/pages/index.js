@@ -5,6 +5,7 @@ import HeroSection from '../components/Hero/';
 import InfoSection from '../components/Info';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/Info/Data';
 import Services from '../components/Services';
+import Carousel from '../components/Carousel';
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,8 +18,9 @@ const Home = () => {
     <Navbar toggle={toggle} />
     <HeroSection/>
     <InfoSection {...homeObjOne}/>
-    <Services/>
+    <Carousel/>
     <InfoSection {...homeObjTwo}/>
+    <Services/>
     <InfoSection {...homeObjThree}/>
     
     </>

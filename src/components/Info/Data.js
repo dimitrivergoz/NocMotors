@@ -33,11 +33,11 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-    id: 'contact',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Three',
+    id: 'events',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Two',
     headLine: 'Porsche GT3 ',
     description: 'Lorem ipsum',
     buttonLabel: 'Voir le modèle',
@@ -46,5 +46,5 @@ export const homeObjThree = {
     alt: 'Alt',
     dark: false,
     primary: true,
-    darkText: false
+    darkText: true
 };

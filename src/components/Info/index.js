@@ -3,6 +3,7 @@ import {Button} from '../Button'
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine,Heading, Subtitle, BtnWrap, Img, ImgWrap, Logo} from './Info'; 
 
 const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
+    
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>

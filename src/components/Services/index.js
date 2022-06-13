@@ -7,7 +7,7 @@ function Services() {
   return (
     <>
         <ServicesContainer id="services">
-            <ServicesH1>Supercar</ServicesH1>
+            <ServicesH1>Services</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>

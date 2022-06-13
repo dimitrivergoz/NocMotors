@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { CarouselContainer, CarouselContent } from './Carousel'
+import {Button} from '../Button'
+import { CarouselContainer, CarouselContent, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine,Heading, Subtitle, BtnWrap, Img, ImgWrap, Logo } from './Carousel'
 import {AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai"
 const cars = [
   {img: require('../../images/1.jpg'),
@@ -56,27 +57,47 @@ function Carousel() {
 
   return (
     <>
-        <CarouselContainer id="vehicules">
-          <CarouselContent>
+    <div id="carousel" className='h-10'>
+    </div>
+<InfoContainer>
+                <InfoWrapper>
+                    <InfoRow>
+                        <Column2>
+                            <TextWrapper>
+                                <TopLine>Les vedettes</TopLine>
+                                <Heading>{cars[currentIndex].name}</Heading>
+                                <Subtitle>{cars[currentIndex].annee}</Subtitle>
+                                <BtnWrap><Button>Button</Button></BtnWrap>
+                            </TextWrapper>
+                        </Column2>
+                        
+                        <Column1>
+              
+                            <ImgWrap>
+                            <div ref={slideRef} className='w-full select-none relative object-center'>
+      
+                            <div className="aspect-w-16 aspect-h-9">
+                            <img src={cars[currentIndex].img} className='object-center block' alt="" />
+                            </div> 
+                            <div className='w-full static transform mt-4 px-5 flex justify-between items-center'>
+                              <button onClick={handleOnNextClick} className="bg-black text-white rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 p-1 transition"><AiFillCaretLeft/></button>
+                              <button onClick={handleOnPreviousClick} className="bg-black text-white rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 p-1 transition"><AiFillCaretRight/></button>
+                            </div>
+                            
+                                <Logo />
+                                </div>
+                            </ImgWrap>
+                            
+                        </Column1>
+          
+                    </InfoRow>
+                </InfoWrapper>
+
+            </InfoContainer>
             
-            <div ref={slideRef} className='w-full select-none relative object-center'>
-              <div className="aspect-w-16 aspect-h-9">
-              <img src={cars[currentIndex].img} className='object-center block' alt="" />
-              </div> 
-              <div className='absolute w-full transform -translate-y-3/2 px-3 flex justify-between items-center'>
-                <h1 className='text-white text-2xl flex justify-between items-center'>{cars[currentIndex].name}</h1>
-                <h1 className='text-white text-2xl'>{cars[currentIndex].annee}</h1>
-              </div>
-                <div className='absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center'>
-                  <button onClick={handleOnNextClick} className="bg-black text-white rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 p-1 transition"><AiFillCaretLeft/></button>
-                  <button onClick={handleOnPreviousClick} className="bg-black text-white rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 p-1 transition"><AiFillCaretRight/></button>
-                </div>
 
-            </div>
 
-          </CarouselContent>
 
-        </CarouselContainer>
       </>
   )
 }

@@ -35,7 +35,7 @@ export const CarouselContent =styled.div`
 
 export const InfoContainer = styled.div`
     color:#fff;
-    background: ${({lightBg}) => (lightBg ? 'white' : 'black')};
+    background: white;
 
     @media screen and (max-width: 768px){
         padding: 100px 0;
@@ -45,7 +45,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height:60vh;
+    height:600px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -53,7 +53,7 @@ export const InfoWrapper = styled.div`
     padding: 0 0px;
     justify-content: center;
     @media screen and (max-width: 768px){
-        height:100vh;
+        height:500px;
     }
 
 `
@@ -76,12 +76,17 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    max-width: 100%;
+    width: 800px;
     grid-area: col1;
+    padding-top: 15px;
+    @media screen and (max-width: 750px){
+        width: 460px;
+    }
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
+    width: 200px;
     padding: 0 15px;
     grid-area: col2;
 `
@@ -98,7 +103,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #696969;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -108,13 +113,13 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
+    color: black;
 
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 60px;
     }
 
 `
@@ -124,7 +129,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#f7f8fa')};
+    color: black;
 `
 
 export const BtnWrap = styled.div`
@@ -138,7 +143,7 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    max-width: 750px;
+    width: 750px;
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 4px;
@@ -146,3 +151,4 @@ export const Img = styled.img`
         max-width: 450px;
     }
 `
+

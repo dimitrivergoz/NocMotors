@@ -11,6 +11,7 @@ const HeroSection = () =>{
     };
 
   return (
+    <>
     <HeroContainer>
         <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
@@ -23,15 +24,15 @@ const HeroSection = () =>{
                     <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover}>Contact {hover ? <ArrowRight /> :  <ArrowForward />}</Button>
                 </HeroBtnWrapper>
                     <HeroDivSvg>
-                    <NavLinks to="vehicules">
+                    <NavLinks to="carousel">
                         <svg  xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 animate-bounce inline-block" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={1}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
                         </svg>
                     </NavLinks>
                 </HeroDivSvg>
             </HeroContent>
-            
     </HeroContainer>
+    </>
   )
 };
 

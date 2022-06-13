@@ -67,7 +67,7 @@ function Carousel() {
                                 <TopLine>Les vedettes</TopLine>
                                 <Heading>{cars[currentIndex].name}</Heading>
                                 <Subtitle>{cars[currentIndex].annee}</Subtitle>
-                                <BtnWrap><Button>Button</Button></BtnWrap>
+                                <BtnWrap><Button>Voir le modèle</Button></BtnWrap>
                             </TextWrapper>
                         </Column2>
                         

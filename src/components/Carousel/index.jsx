@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { CarouselContainer, CarouselContent } from './Carousel'
 import {AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai"
-
 const cars = [
   {img: require('../../images/1.jpg'),
   name:"Thunderbird", annee:"1254"},
@@ -66,7 +65,7 @@ function Carousel() {
               </div> 
               <div className='absolute w-full transform -translate-y-3/2 px-3 flex justify-between items-center'>
                 <h1 className='text-white text-2xl flex justify-between items-center'>{cars[currentIndex].name}</h1>
-                <h1 className='text-white text-2xl flex justify-between items-center'>{cars[currentIndex].annee}</h1>
+                <h1 className='text-white text-2xl'>{cars[currentIndex].annee}</h1>
               </div>
                 <div className='absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center'>
                   <button onClick={handleOnNextClick} className="bg-black text-white rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 p-1 transition"><AiFillCaretLeft/></button>
@@ -78,8 +77,7 @@ function Carousel() {
           </CarouselContent>
 
         </CarouselContainer>
-    
-    </>
+      </>
   )
 }
 

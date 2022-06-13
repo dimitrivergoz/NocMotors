@@ -11,20 +11,20 @@ function Services() {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
-                    <ServicesH2>H2</ServicesH2>
-                    <ServicesP>P</ServicesP>
+                    <ServicesH2>Locations</ServicesH2>
+                    <ServicesP>Pour vos évenements professionnels</ServicesP>
                 </ServicesCard>
                 
                 <ServicesCard>
                     <ServicesIcon src={Icon2}/>
-                    <ServicesH2>H2 2</ServicesH2>
-                    <ServicesP>P 2</ServicesP>
+                    <ServicesH2>Achat / Vente</ServicesH2>
+                    <ServicesP>Nous vous aidons à trouver le véhicule de vos rêves</ServicesP>
                 </ServicesCard>
                 
                 <ServicesCard>
                     <ServicesIcon src={Icon3}/>
-                    <ServicesH2>H2 3</ServicesH2>
-                    <ServicesP>P 3</ServicesP>
+                    <ServicesH2>Reparation</ServicesH2>
+                    <ServicesP>Avec ...</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
 

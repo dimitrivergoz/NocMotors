@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import {Button} from '../Button'
-import { CarouselContainer, CarouselContent, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine,Heading, Subtitle, BtnWrap, Img, ImgWrap, Logo } from './Carousel'
+import { CarouselContainer, CarouselContent,Column3, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine,Heading, Subtitle, BtnWrap, Img, ImgWrap, Logo } from './Carousel'
 import {AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai"
 const cars = [
   {img: require('../../images/1.jpg'),

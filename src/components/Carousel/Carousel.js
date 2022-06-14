@@ -36,24 +36,28 @@ export const CarouselContent =styled.div`
 export const InfoContainer = styled.div`
     color:#fff;
     background: white;
-
+    padding: 40px 0;    
     @media screen and (max-width: 768px){
-        padding: 100px 0;
+        padding: 10px 0;
     }
 
 `
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height:600px;
-    width: 100%;
+    height:550px;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 0px;
+    padding: 0 -22px;
+    margin-top: -50px;
     justify-content: center;
+    @media screen and (max-width: 1150px){
+        margin: -10px 10px;
+        height: 400px;
+    }
     @media screen and (max-width: 768px){
-        height:500px;
+        height: 420px;
     }
 
 `
@@ -79,15 +83,28 @@ export const Column1 = styled.div`
     width: 800px;
     grid-area: col1;
     padding-top: 15px;
-    @media screen and (max-width: 1000px){
-        width: 600px;
+    display: grid;
+    @media screen and (max-width: 1150px){
+        width: 530px;
     }
     @media screen and (max-width: 768px){
-        width: 470px;
+        width: 400px;
     }
+
 `
 
 export const Column2 = styled.div`
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 0 15px;
+    grid-area: col2;
+    @media screen and (max-width: 768px){
+        grid-area: col2;
+        width: 1fr;
+    }
+`
+
+export const Column3 = styled.div`
     margin-bottom: 15px;
     width: 200px;
     padding: 0 15px;
@@ -112,6 +129,15 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+
+    @media screen and (max-width: 1150px){
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
 `
 
 export const Heading = styled.h1`
@@ -120,9 +146,13 @@ export const Heading = styled.h1`
     line-height: 1.1;
     font-weight: 600;
     color: black;
-
-    @media screen and (max-width: 480px){
-        font-size: 60px;
+    @media screen and (max-width: 1150px){
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+        margin-bottom: 6px;
     }
 
 `
@@ -138,6 +168,11 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    @media screen and (max-width: 768px){
+        grid-area: col3;
+        margin-left: 200px;
+        margin-top: -90px;
+    }
 `
 
 export const ImgWrap = styled.div`
@@ -151,7 +186,7 @@ export const Img = styled.img`
     padding-right: 0;
     border-radius: 4px;
     @media screen and (max-width: 750px){
-        max-width: 450px;
+        max-width: 500px;
     }
 `
 

@@ -9,6 +9,9 @@ export const ServicesContainer = styled.div`
     background: #010606;
     color: black;
 
+    @media screen and (max-width: 1000px){
+        height: 1000px;
+    }
     @media screen and (max-width: 768px){
         height: 1100px;
     }
@@ -18,13 +21,13 @@ export const ServicesContainer = styled.div`
 export const ServicesWrapper = styled.div`
     margin: 0 0;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 1Opx;
 
     @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     @media screen and (max-width: 768px){
@@ -50,7 +53,11 @@ export const ServicesCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1000px){
+        width: 360px;
+    }
+
+    @media screen and (max-width: 1000px){
         width: 350px;
     }
 `

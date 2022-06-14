@@ -79,8 +79,11 @@ export const Column1 = styled.div`
     width: 800px;
     grid-area: col1;
     padding-top: 15px;
-    @media screen and (max-width: 750px){
-        width: 460px;
+    @media screen and (max-width: 1000px){
+        width: 600px;
+    }
+    @media screen and (max-width: 768px){
+        width: 470px;
     }
 `
 

@@ -108,6 +108,6 @@ export const Img = styled.img`
     padding-right: 0;
     border-radius: 4px;
     @media screen and (max-width: 1000px){
-        max-width: 450px;
+        max-width: 455px;
     }
 `

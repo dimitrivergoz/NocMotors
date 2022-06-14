@@ -88,7 +88,8 @@ export const Column1 = styled.div`
         width: 530px;
     }
     @media screen and (max-width: 768px){
-        width: 400px;
+        margin-top: -30px;
+        width: 485px;
     }
 
 `
@@ -131,12 +132,13 @@ export const TopLine = styled.p`
     margin-bottom: 16px;
 
     @media screen and (max-width: 1150px){
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 8px;
         margin-bottom: 12px;
     }
     @media screen and (max-width: 768px){
         font-size: 12px;
-        margin-bottom: 6px;
+        margin-bottom: 2px;
     }
 `
 
@@ -170,13 +172,13 @@ export const BtnWrap = styled.div`
     justify-content: flex-start;
     @media screen and (max-width: 768px){
         grid-area: col3;
-        margin-left: 200px;
+        margin-left: 285px;
         margin-top: -90px;
     }
 `
 
 export const ImgWrap = styled.div`
-    max-width: auto;
+    max-width: 815px;
     height: 100%;
 `
 
@@ -186,7 +188,7 @@ export const Img = styled.img`
     padding-right: 0;
     border-radius: 4px;
     @media screen and (max-width: 750px){
-        max-width: 500px;
+        width: 515px;
     }
 `
 

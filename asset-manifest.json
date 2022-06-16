@@ -1,22 +1,17 @@
 {
   "files": {
-    "main.css": "/NocMotors/static/css/main.28c40539.css",
-    "main.js": "/NocMotors/static/js/main.d898eee0.js",
-    "static/js/787.1b323013.chunk.js": "/NocMotors/static/js/787.1b323013.chunk.js",
+    "main.css": "/NocMotors/static/css/main.d37247ce.css",
+    "main.js": "/NocMotors/static/js/main.8a48f152.js",
+    "static/js/787.5df7b0c2.chunk.js": "/NocMotors/static/js/787.5df7b0c2.chunk.js",
     "static/media/video.mp4": "/NocMotors/static/media/video.a463d17af79e78752e73.mp4",
-    "static/media/1.jpg": "/NocMotors/static/media/1.3f4661b63fc753603d9f.jpg",
-    "static/media/2.jpg": "/NocMotors/static/media/2.492597510394c7712b87.jpg",
-    "static/media/3.jpg": "/NocMotors/static/media/3.b08b8263e3b54fa5af39.jpg",
-    "static/media/porsche.jpg": "/NocMotors/static/media/porsche.83cccf08c3c8fd0c0803.jpg",
-    "static/media/1.svg": "/NocMotors/static/media/1.2dcad10c17297a62707a5cc570639bdd.svg",
-    "static/media/logo.svg": "/NocMotors/static/media/logo.1d30110ec9b9a5985a84e3bb3e72df92.svg",
+    "static/media/logo.svg": "/NocMotors/static/media/logo.04f24300a8f1aa7b13bc6e893ded0bae.svg",
     "index.html": "/NocMotors/index.html",
-    "main.28c40539.css.map": "/NocMotors/static/css/main.28c40539.css.map",
-    "main.d898eee0.js.map": "/NocMotors/static/js/main.d898eee0.js.map",
-    "787.1b323013.chunk.js.map": "/NocMotors/static/js/787.1b323013.chunk.js.map"
+    "main.d37247ce.css.map": "/NocMotors/static/css/main.d37247ce.css.map",
+    "main.8a48f152.js.map": "/NocMotors/static/js/main.8a48f152.js.map",
+    "787.5df7b0c2.chunk.js.map": "/NocMotors/static/js/787.5df7b0c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28c40539.css",
-    "static/js/main.d898eee0.js"
+    "static/css/main.d37247ce.css",
+    "static/js/main.8a48f152.js"
   ]
 }

@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-
+    
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
@@ -33,7 +33,7 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
-    cursos: pointer;
+    cursor: pointer;
     font-size: 1.5rem;
     display:flex;
     align-items: center;

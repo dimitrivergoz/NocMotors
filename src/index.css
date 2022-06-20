@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  
 }
 
 code {
@@ -49,6 +50,8 @@ html{
   border-radius: 30px;
   margin: 0;
   background: hsl(0, 0%, 0%, 0.5);
+  font-family: 'Anek Malayalam', sans-serif;
+  
   
 }
 
@@ -80,4 +83,9 @@ html{
   position: fixed ;
   top: 2rem;
   right: 1em;
+}
+
+#contact{
+  font-family: 'Anek Malayalam', sans-serif;
+  font-size: 18px;
 }

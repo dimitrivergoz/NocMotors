@@ -101,7 +101,7 @@ function App() {
     <div className="grid grid-flow-row lg:grid-cols-3 gap-5 xl:grid-cols-3 xl:gap-8 mx-5 text-gray-100">
         <div className="shadow-lg rounded-lg border-2 border-grey-400">
             <a href="#">
-                <img src="https://nocmotors.com/wp-content/uploads/2021/07/YPS_0472_yoshipowershot.com-min.jpg" className="rounded-tl-lg rounded-tr-lg"/>
+                <img src="https://vergoz.xyz/img/911.jpg" className="rounded-tl-lg rounded-tr-lg"/>
             </a>
             <div className="p-5 hover:from-black hove:to-blue-100 flex justify-between">
                 <h3><a href="#">Ford Thunderbird</a></h3>
@@ -111,7 +111,7 @@ function App() {
 
         <div className="shadow-lg rounded-lg border-2 border-grey-400">
             <a href="#">
-                <img src="https://nocmotors.com/wp-content/uploads/2021/07/YPS_0472_yoshipowershot.com-min.jpg" className="rounded-tl-lg rounded-tr-lg"/>
+                <img src="https://vergoz.xyz/img/ds21.jpg" className="rounded-tl-lg rounded-tr-lg"/>
             </a>
             <div className="p-5 hover:from-black hove:to-blue-100 flex justify-between">
                 <h3><a href="#">Ford Thunderbird</a></h3>
@@ -121,7 +121,7 @@ function App() {
 
         <div className="shadow-lg rounded-lg border-2 border-grey-400">
             <a href="#">
-                <img src="https://nocmotors.com/wp-content/uploads/2021/07/YPS_0472_yoshipowershot.com-min.jpg" className="rounded-tl-lg rounded-tr-lg"/>
+                <img src="https://vergoz.xyz/img/SVI.jpg" className="rounded-tl-lg rounded-tr-lg"/>
             </a>
             <div className="p-5 hover:from-black hove:to-blue-100 flex justify-between">
                 <h3><a href="#">Ford Thunderbird</a></h3>
@@ -147,11 +147,11 @@ function App() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg> <h3 className="mt-1 ">Garage situé à Courbevoie (92) </h3>
+                      </svg> <h3 className="mt-1 text-xl mb-5">Garage situé à Courbevoie (92) </h3>
                       
                 </div>
                 <div className="mx-auto flex flex-col items-center">
-                <p className="leading-loose mb-8 rounded-full">
+                <p className="leading-loose mb-0 rounded-full">
                     <h4>Noc Motors fournit des véhicules des années 60 à nos jours, pour des locations (shooting, clips, films).
                     Vous souhaitez acheter un véhicule, nous aidons aussi les passionnées à trouver leurs bonheurs.</h4>
 
@@ -177,7 +177,7 @@ function App() {
 
             </div>
             <div className="lg:w-2/5 w-full lg:flex lg:flex-row flex-auto hidden">
-                <img src="https://nocmotors.com/wp-content/themes/nocmotors/img/logo.svg" alt="" width="70%" />
+                <img width="70%" src={require('./logo.svg').default}/>
             </div>
         </div>
         <div className="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center px-5 py-2 text-sm text-gray-100">

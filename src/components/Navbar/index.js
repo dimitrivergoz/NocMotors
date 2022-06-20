@@ -19,14 +19,14 @@ function Navbar() {
       </div>
       <nav className="nav-bar">
  
-          <ul id="primary-navigation" className={`primary-navigation flex transition-all duration-500 ease-in ${open ? 'top-20 opacity-100':'top-[-490px] opacity-0'} `}>
+          <ul id="primary-navigation" className={`primary-navigation flex transition-all duration-500 ease-in ${open ? 'top-20 opacity-100':'top-[-490px] opacity-0'} md:opacity-100 `}>
             {Links.map((link)=>(
               <li className="active" id="{link.name}">
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
                 href="{link.link}"
               >
-                <span aria-hidden="true">00</span>{link.name}
+                <span aria-hidden="true">{link.numero}</span>{link.name}
               </a>
             </li>
             ))}

@@ -68,7 +68,7 @@ html{
   margin-inline-end: .75em;
 }
 
-@media (max-width:42em){
+@media (max-width:48em){
   .primary-navigation{
     border-radius: 0px;
     --gap:3em; 

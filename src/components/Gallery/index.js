@@ -24,12 +24,12 @@ function Gallery() {
           </a>
         </div>
         
-        <div className="grid grid-flow-row lg:grid-cols-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-5 text-gray-100">
+        <div className="grid grid-flow-row grid-cols-2 sm:gap-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-2 text-gray-100">
         {Links.map((link)=>(
           <div className="shadow-lg rounded-lg border-2 border-grey-400">
             <a href="#">
               <img src={link.src} className="rounded-tl-lg rounded-tr-lg opacity-60 hover:opacity-100" />
-              <h1 className=' absolute text-2xl mt-[-2em] ml-[1em]'>{link.st}</h1>
+              <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>{link.st}</h1>
             </a>
           </div>
           ))}

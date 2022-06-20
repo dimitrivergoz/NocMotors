@@ -27,6 +27,14 @@ function Navbar() {
               </a>
             </li>
             ))}
+            <li className="active mr-[-14px]" id="{link.name}">
+              <a
+                class="uppercase bg-gray-50 text-black md:pl-4 md:pr-2 md:py-3.5 pl-6 pr-3 py-4 rounded-full"
+                href="#contact"
+              >
+                <span aria-hidden="true">Contact</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </header>

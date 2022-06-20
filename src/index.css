@@ -20,6 +20,7 @@ code {
 }
 html{
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 #videodeo{

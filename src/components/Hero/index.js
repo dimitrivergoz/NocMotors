@@ -6,11 +6,9 @@ import {
   HeroBg,
   VideoBg,
   HeroContent,
-  HeroH1,
   HeroP,
   HeroBtnWrapper,
   HeroDivSvg,
-  NavLinks,
 } from "./Hero";
 
 const HeroSection = () => {
@@ -21,7 +19,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <HeroContainer>
+      <HeroContainer id="home">
         <HeroBg>
           <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
         </HeroBg>

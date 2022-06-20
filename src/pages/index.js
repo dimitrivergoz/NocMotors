@@ -20,7 +20,7 @@ const Home = () => {
     <Carousel/>
     <Services/>
     <InfoSection {...homeObjTwo}/>
-    
+    <Gallery />
     </>
   );
 };

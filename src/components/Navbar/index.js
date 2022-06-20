@@ -1,14 +1,12 @@
 
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import Button from "../Button";
 
 function Navbar() {
   let Links = [
-    { name: "ACCUEIL", link: "/", numero:"00" },
-    { name: "SERVICES", link: "/", numero:"01" },
-    { name: "VEHICULES", link: "/", numero:"02" },
-    { name: "EVENEMENTS", link: "/", numero:"03" },
+    { name: "ACCUEIL", link: "#home", numero:"00" },
+    { name: "SERVICES", link: "#services", numero:"01" },
+    { name: "VEHICULES", link: "#vehicules", numero:"02" },
+    { name: "EVENEMENTS", link: "#evenements", numero:"03" },
   ];
   let [open, setOpen] = useState(false);
   return (
@@ -24,7 +22,7 @@ function Navbar() {
               <li className="active" id="{link.name}">
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="{link.link}"
+                href={link.link}
               >
                 <span aria-hidden="true">{link.numero}</span>{link.name}
               </a>

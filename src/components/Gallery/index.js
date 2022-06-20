@@ -24,7 +24,7 @@ function Gallery() {
           </a>
         </div>
         
-        <div className="grid grid-flow-row grid-cols-2 sm:gap-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-2 text-gray-100">
+        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-2 text-gray-100">
         {Links.map((link)=>(
           <div className="shadow-lg rounded-lg border-2 border-grey-400">
             <a href="#">

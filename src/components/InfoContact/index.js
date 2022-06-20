@@ -9,7 +9,7 @@ function InfoContact() {
                 <h3 className="text-2xl font-extrabold mb-1">
                 </h3>
                 <div className="lg:hidden flex flex-col items-center">
-                    <img src="../../logo.svg" alt="" className="h-40" />
+                  <img src={require('../../logo.svg').default} width="70%" alt=""/>
                 </div>
                 <div className="container flex align-items place-self-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -45,7 +45,7 @@ function InfoContact() {
 
             </div>
             <div className="lg:w-2/5 w-full lg:flex lg:flex-row flex-auto hidden">
-            <img src={require('../../logo.svg').default} width="70%" alt=""/>
+              <img src={require('../../logo.svg').default} width="70%" alt=""/>
             </div>
         </div>
     </>

@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <>
       <header class="primary-header flex z-10">
-      <div onClick={()=>setOpen(!open)} className="absolute text-4xl right-8 top-6 z-30 cursor-pointer md:hidden">
+      <div onClick={()=>setOpen(!open)} className="fixed text-4xl right-8 top-6 z-30 cursor-pointer md:hidden">
         <ion-icon name={open ? 'close':'menu' }></ion-icon>
       </div>
       <nav className="nav-bar">

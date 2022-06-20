@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-
 function Navbar() {
   let Links = [
     { name: "ACCUEIL", link: "#home", numero:"00" },
@@ -28,7 +27,6 @@ function Navbar() {
               </a>
             </li>
             ))}
-          
           </ul>
         </nav>
       </header>

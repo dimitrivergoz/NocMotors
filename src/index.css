@@ -68,21 +68,11 @@ html{
   margin-inline-end: .75em;
 }
 
-@media (max-width:48em){
-  .primary-navigation{
-    border-radius: 0px;
-    --gap:3em; 
-    position: fixed;
-    z-index: 1000;
-    inset: 0 0 0 30%;
-    flex-direction: column;
-    padding: min(30vh, 10rem) 2em;
-  }
-}
+
 
 .nav-bar{
-  position: fixed ;
-  top: 2rem;
+  position: fixed;
+  top: 1.5rem;
   right: 1em;
 }
 

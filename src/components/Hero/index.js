@@ -9,7 +9,7 @@ import {
   HeroP,
   HeroBtnWrapper,
   HeroDivSvg,
-} from "./Hero";
+} from "./hero";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);

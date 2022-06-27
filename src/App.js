@@ -8,7 +8,7 @@ import Gallery from './components/Gallery';
 function App() {
   return (
     <>
-        <Navbar />
+      <Navbar/>
         <Hero />
         <Services />
         <Carousel />

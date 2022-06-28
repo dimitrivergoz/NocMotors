@@ -1,4 +1,5 @@
 
+
 import React, { useState } from "react";
 function Navbar() {
   let Links = [
@@ -11,10 +12,10 @@ function Navbar() {
   return (
 <>
 <header className="primary-header flex">
-<div onClick={()=>setOpen(!open)} className="fixed text-4xl right-8 top-6 z-50 cursor-pointer md:hidden">
+<div onClick={()=>setOpen(!open)} className=" fixed text-4xl right-8 top-6 z-50 cursor-pointer md:hidden">
   <ion-icon name={open ? 'close':'menu' }></ion-icon>
 </div>
-<nav className={`${open ? 'z-10': 'z-[-1]'}`}>
+<nav className={`${open ? 'z-10': 'z-[-1] fixed top-5 right-5 md:z-50' }`}>
 
     <ul id="primary-navigation" className={`primary-navigation flex transition-all duration-500 ease-in ${open ? 'top-20 opacity-100 absolute':'top-[-490px] opacity-0'} md:opacity-100 block `}>
       {Links.map((link)=>(

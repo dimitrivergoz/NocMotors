@@ -36,20 +36,7 @@ const HeroSection = () => {
           </HeroBtnWrapper>
           <HeroDivSvg className="mt-10 relative md:bottom-[-10em] inline-block">
             <a href="#services">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-12 w-12 animate-bounce inline-block"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-                strokeWidth={1}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-                />
-              </svg>
+            <ion-icon size="large" className="animate-bounce" name="arrow-down-outline"></ion-icon>
             </a>
           </HeroDivSvg>
         </HeroContent>

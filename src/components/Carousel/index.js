@@ -17,13 +17,11 @@ export default class Responsive extends Component {
       { name: "VEHICULES", src: "https://vergoz.xyz/img/911.jpg", name:"911", annee:"2020" },
     ];
     var settings = {
-      dots: true,
       infinite: false,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
       initialSlide: 0,
-      focusOnSelect:true,
       responsive: [
         {
           breakpoint: 1024,
@@ -31,7 +29,6 @@ export default class Responsive extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: true,
             arrows:false
           }
         },

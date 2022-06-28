@@ -10,13 +10,13 @@ function Navbar() {
   let [open, setOpen] = useState(false);
   return (
 <>
-<header class="primary-header flex z-10">
-<div onClick={()=>setOpen(!open)} className="fixed text-4xl right-8 top-6 z-30 cursor-pointer md:hidden">
+<header className="primary-header flex">
+<div onClick={()=>setOpen(!open)} className="fixed text-4xl right-8 top-6 z-50 cursor-pointer md:hidden">
   <ion-icon name={open ? 'close':'menu' }></ion-icon>
 </div>
-<nav className="nav-bar">
+<nav className={`${open ? 'z-10': 'z-[-1]'}`}>
 
-    <ul id="primary-navigation" className={`primary-navigation flex transition-all duration-500 ease-in`}>
+    <ul id="primary-navigation" className={`primary-navigation flex transition-all duration-500 ease-in ${open ? 'top-20 opacity-100 absolute':'top-[-490px] opacity-0'} md:opacity-100 block `}>
       {Links.map((link)=>(
         <li className="active" id="{link.name}">
         <a

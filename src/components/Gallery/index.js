@@ -13,7 +13,7 @@ function Gallery() {
   ];
   return (
     <>
-    <div className="mt-5 mb-5" id="evenements">
+    <div className="my-20" id="evenements">
         <div className="flex flex-row justify-between text-gray-100">
           <h2 className="text-xl md:text-3xl mb-3 ml-5">Evènements</h2>
           <a href="#" className="text-xl flex flex-row">
@@ -23,37 +23,20 @@ function Gallery() {
             </svg>
           </a>
         </div>
-        </div>
-    <div class="container mx-auto">
-    <div class="grid-cols-4  space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-2 mx-2">
-        <div class="w-full shadow-lg rounded-lg border-2 border-grey-400">
-            <img src="https://vergoz.xyz/img/911.jpg"
-                alt="image" />
-                <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>TEXT</h1>
-        </div>
-        <div class="w-full col-span-2 row-span-2 shadow-lg rounded-lg border-2 border-grey-400">
-            <img src="https://vergoz.xyz/img/911.jpg"
-                alt="image" />
-                <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>GTEXT</h1>
-        </div>
-        <div class="w-full shadow-lg rounded-lg border-2 border-grey-400">
-            <img src="https://vergoz.xyz/img/911.jpg"
-                alt="image" />
-                <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>TEXT</h1>
-        </div>
-        <div class="w-full shadow-lg rounded-lg border-2 border-grey-400">
-            <img src="https://vergoz.xyz/img/911.jpg"
-                alt="image" />
-                <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>TEXT</h1>
-        </div>
-        <div class="w-full shadow-lg rounded-lg border-2 border-grey-400">
-            <img src="https://vergoz.xyz/img/911.jpg"
-                alt="image" />
-                <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>TEXT</h1>
-        </div>
-    </div>
-</div>
+        
+        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-2 text-gray-100">
+        {Links.map((link)=>(
+          <div className="shadow-lg rounded-lg border-2 border-grey-400">
+            <a href="#">
+              <img src={link.src} className="rounded-tl-lg rounded-tr-lg opacity-60 hover:opacity-100" />
+              <h1 className=' absolute text-2xl mt-[-1.5em] ml-[0.5em]'>{link.st}</h1>
+            </a>
+          </div>
+          ))}
 
+        </div>
+      </div>
+    
     </>
   )
 }

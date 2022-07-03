@@ -17,6 +17,7 @@ function App() {
         <Gallery/>
         <InfoContact />
 
+      
 
         <div className="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center px-5 py-2 text-sm text-gray-100">
             <div className="mb-4 space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">

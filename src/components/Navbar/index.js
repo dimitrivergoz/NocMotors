@@ -38,8 +38,16 @@ function Navbar() {
             ))}
             <li className="active mr-[-15.5px]" id="{link.name}">
             <Link
-                className="uppercase bg-gray-50 text-black md:pl-5 md:pr-2.5 md:py-4 pl-6 pr-3 py-4 rounded-full"
+                className="hidden md:inline uppercase bg-gray-50 text-black md:pl-5 md:pr-2.5 md:py-4 pl-6 pr-3 py-4 rounded-full"
                 to="/NocMotors/contact"
+                
+              >
+                <span aria-hidden="true">Contact</span>
+              </Link>
+              <Link
+                className="md:hidden uppercase bg-gray-50 text-black md:pl-5 md:pr-2.5 md:py-4 pl-6 pr-3 py-4 rounded-full"
+                to="/NocMotors/contact"
+                onClick={() => setOpen(!open)}
               >
                 <span aria-hidden="true">Contact</span>
               </Link>

@@ -34,11 +34,11 @@ function Events() {
           <h2 className="text-xl md:text-3xl mb-3 ml-5">Evènements</h2>
         </div>
 
-        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-6 text-gray-100">
+        <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-5 xl:grid-cols-4 xl:gap-3 mx-6 text-gray-100">
           {Links.map((link) => (
             <div class="shadow-lg shadow-lg rounded-lg border-2 border-grey-400 opacity-60 hover:opacity-100">
               <img
-                class="w-[500px] h-[450px] object-cover"
+                class="object-cover sm:w-[450px] sm:h-[500px]" 
                 src={link.src}
                 alt={link.name}
               />

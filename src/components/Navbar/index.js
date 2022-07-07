@@ -28,8 +28,11 @@ function Navbar() {
           >
             {Links.map((link) => (
               <li className="active" id="{link.name}">
-                <Link className="" to={link.link}>
+                <Link className="hidden md:block" to={link.link}>
                   {link.numero} : {link.name}
+                </Link>
+                <Link onClick={() => setOpen(!open)} className="block md:hidden" to={link.link}>
+                  {link.numero} :  {link.name}
                 </Link>
               </li>
             ))}

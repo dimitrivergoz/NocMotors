@@ -2,7 +2,12 @@ import React from "react";
 function Services() {
   return (
     <>
-      <section id="services">
+    <div className="mt-20" id="evenements">
+        <div className="flex flex-row justify-between text-gray-100">
+          <h2 className="text-xl md:text-3xl mb-3 ml-5">Nos services</h2>
+        </div>
+      </div>
+      <section id="services" className="mb-20">
         <div
           id="noc"
           className="container flex flex-col px-10 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row text-white pt-6"

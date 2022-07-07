@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import {Link } from "react-router-dom";
 function Navbar() {
   let Links = [
-    { name: "ACCUEIL", link: "#home", numero: "00" },
-    { name: "SERVICES", link: "#services", numero: "01" },
-    { name: "VEHICULES", link: "#vehicules", numero: "02" },
-    { name: "EVENEMENTS", link: "#evenements", numero: "03" },
+    { name: "ACCUEIL", link: "/NocMotors", numero: "00" },
+    { name: "SERVICES", link: "/NocMotors/services", numero: "01" },
+    { name: "VEHICULES", link: "/NocMotors/voitures", numero: "02" },
+    { name: "EVENEMENTS", link: "/NocMotors/events", numero: "03" },
   ];
   let [open, setOpen] = useState(false);
   return (
@@ -27,22 +28,19 @@ function Navbar() {
           >
             {Links.map((link) => (
               <li className="active" id="{link.name}">
-                <a
-                  class="ff-sans-cond uppercase text-white letter-spacing-2"
-                  href={link.link}
-                >
-                  <span aria-hidden="true">{link.numero}</span>
-                  {link.name}
-                </a>
+                <Link className="" to={link.link}>
+                  {link.numero} : {link.name}
+                </Link>
               </li>
             ))}
-            <li className="active mr-[-14px]" id="{link.name}">
-              <a
-                class="uppercase bg-gray-50 text-black md:pl-4 md:pr-2 md:py-3.5 pl-6 pr-3 py-4 rounded-full"
-                href="#contact"
+            <li className="active mr-[-15.5px]" id="{link.name}">
+            <Link
+                className="uppercase bg-gray-50 text-black md:pl-5 md:pr-2.5 md:py-4 pl-6 pr-3 py-4 rounded-full"
+                to="/NocMotors/contact"
               >
                 <span aria-hidden="true">Contact</span>
-              </a>
+              </Link>
+              
             </li>
           </ul>
         </nav>

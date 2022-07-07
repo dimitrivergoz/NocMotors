@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Video from "../../videos/video.mp4";
 import {
   HeroContainer,
@@ -11,11 +11,6 @@ import {
 } from "./hero";
 
 const Accueil = () => {
-  const [hover, setHover] = useState(false);
-  const onHover = () => {
-    setHover(!hover);
-  };
-
   return (
     <>
       <HeroContainer id="home">
@@ -24,7 +19,7 @@ const Accueil = () => {
         </HeroBg>
 
         <HeroContent>
-          <img width={400} src="https://vergoz.xyz/img/logonoir.svg" />
+          <img width={400} src="https://vergoz.xyz/img/logonoir.svg" alt="Logo de couleur noir" />
           <HeroP>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </HeroP>
@@ -33,6 +28,9 @@ const Accueil = () => {
           </HeroDivSvg>
         </HeroContent>
       </HeroContainer>
+
+
+
     </>
   );
 };

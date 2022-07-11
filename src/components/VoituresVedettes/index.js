@@ -101,12 +101,12 @@ export default class Responsive extends Component {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <div className="mt-20" id="vehicules">
+        <div className="mt-20 mb-5" id="vehicules">
           <div className="flex flex-row justify-between text-gray-100 rounded">
             <h2 className=" text-xl md:text-3xl mb-3 ml-5">Nos véhicules</h2>
           </div>
 
-          <div className="gap-5 text-gray-100 mx-6">
+          <div className="gap-5 text-gray-100 mx-2">
             <Slider ref={(c) => (this.slider = c)} {...settings}>
               {Links.map((link) => (
                 <div className="shadow-lg rounded-lg border-2">

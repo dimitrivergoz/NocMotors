@@ -46,58 +46,60 @@ function Filter() {
     },
   ];
   const [state, setState] = useState(tout);
-  const handleBtns = (e)=>{
-    let word=e.target.value;
-    if(word === 'all'){
-        setState(tout)
+  const [active, setActive] = useState("first");
+  const handleBtns = (e) => {
+    let word = e.target.value;
+    if (word === "all") {
+      setState(tout);
+      setActive("first");
+    } else if (word === "rent") {
+      const filtered = tout.filter((item) => item.type === "rent");
+      setActive("Second");
+      setState(filtered);
+    } else if (word === "sell") {
+      const filtered = tout.filter((item) => item.type === "sell");
+      setState(filtered);
+      setActive("Third");
     }
-    else if(word === 'rent'){
-        const filtered = tout.filter(item=>item.type==='rent');
-        setState(filtered);
-    }
-    else if(word === 'sell'){
-        const filtered = tout.filter(item=>item.type==='sell');
-        setState(filtered);
-    }
-  }
+  };
   return (
     <div class="container mx-auto">
-      <div className="filter-container my-2 sticky">
+      <div className="filter-container my-2 sticky mx-2">
         <button
           value="all"
-          className="rounded-lg border-2 p-2 mr-2 active:bg-white active:text-black"
+          className={`button rounded-lg border-2 p-2 mr-2 active:bg-white active:text-black ${active === "first" ? "activeButton" : ""}`}
           onClick={handleBtns}
         >
           Tous
         </button>
         <button
           value="rent"
-          className="rounded-lg border-2 p-2 mr-2 active:bg-white active:text-black"
+          className={`button rounded-lg border-2 p-2 mr-2 active:bg-white active:text-black ${active === "Second" ? "activeButton" : ""}`}
           onClick={handleBtns}
         >
           A louer
         </button>
         <button
           value="sell"
-          className="rounded-lg border-2 p-2 mr-2 active:bg-white active:text-black"
+          className={`button rounded-lg border-2 p-2 mr-2 active:bg-white active:text-black ${active === "Third" ? "activeButton" : ""}`}
           onClick={handleBtns}
         >
           A vendre
         </button>
       </div>
-      <div class="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-1 mb-10 ">
+      <div class="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-1 mb-10 mx-2">
         {state.map((item) => (
           <div class="w-full rounded hover:shadow-2xl border-2" key={item.key}>
-            {item.type === "sell"  &&
-                <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
+            {item.type === "sell" && (
+              <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
                 A vendre
-                </p>
-            }
-            {item.type === "rent"  &&
-                <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg">
+              </p>
+            )}
+            {item.type === "rent" && (
+              <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg">
                 A louer
-                </p>
-            } 
+              </p>
+            )}
             <img src={item.src} alt={item.name} />
 
             <div className="p-3 hover:from-black hove:to-blue-100 flex justify-between">

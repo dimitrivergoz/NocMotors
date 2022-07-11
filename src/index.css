@@ -85,3 +85,8 @@ html{
   font-family: 'Anek Malayalam', sans-serif;
   font-size: 18px;
 }
+
+.activeButton {
+  background-color: white;
+  color:black;
+}

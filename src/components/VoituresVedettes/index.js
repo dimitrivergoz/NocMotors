@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Filter from "../Filter";
 export default class Responsive extends Component {
   constructor(props) {
     super(props);
@@ -17,29 +17,48 @@ export default class Responsive extends Component {
   }
   render() {
     let Links = [
-      { src: "https://vergoz.xyz/img/280sl.jpg", name: "911", annee: "2020" },
       {
+        id: 0,
+        type: "sell",
+        src: "https://vergoz.xyz/img/280sl.jpg",
+        name: "911",
+        annee: "2020",
+      },
+      {
+        id: 1,
+        type: "sell",
         src: "https://vergoz.xyz/img/alfaromeo.jpg",
         name: "911",
         annee: "2020",
       },
       {
+        id: 2,
+        type: "rent",
         src: "https://vergoz.xyz/img/aventador.jpg",
         name: "911",
         annee: "2020",
       },
-      { src: "https://vergoz.xyz/img/ds21.jpg", name: "911", annee: "2020" },
       {
+        id: 3,
+        type: "sell",
+        src: "https://vergoz.xyz/img/ds21.jpg",
+        name: "911",
+        annee: "2020",
+      },
+      {
+        id: 4,
+        type: "rent",
         src: "https://vergoz.xyz/img/jeepwillys.jpg",
         name: "911",
         annee: "2020",
       },
       {
+        id: 5,
+        type: "sell",
         src: "https://vergoz.xyz/img/mustang1966.jpg",
         name: "911",
         annee: "2020",
       },
-      { src: "https://vergoz.xyz/img/r8.jpg", name: "911", annee: "2020" },
     ];
     var settings = {
       infinite: false,
@@ -70,7 +89,7 @@ export default class Responsive extends Component {
       ],
     };
     return (
-      <>
+      <div>
         <link
           rel="stylesheet"
           type="text/css"
@@ -82,7 +101,7 @@ export default class Responsive extends Component {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <div className="my-20" id="vehicules">
+        <div className="mt-20" id="vehicules">
           <div className="flex flex-row justify-between text-gray-100 rounded">
             <h2 className=" text-xl md:text-3xl mb-3 ml-5">Nos véhicules</h2>
           </div>
@@ -91,15 +110,22 @@ export default class Responsive extends Component {
             <Slider ref={(c) => (this.slider = c)} {...settings}>
               {Links.map((link) => (
                 <div className="shadow-lg rounded-lg border-2">
-                  <p className="absolute bg-yellow-200 text-black p-2 rounded-br-lg">
-                    A louer
-                  </p>
+                  {link.type === "sell" && (
+                    <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
+                      A vendre
+                    </p>
+                  )}
+                  {link.type === "rent" && (
+                    <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg">
+                      A louer
+                    </p>
+                  )}
                   <img
                     src={link.src}
                     className="rounded-tl-lg rounded-tr-lg "
                     alt={link.name}
                   />
-                  <div className="p-5 hover:from-black hove:to-blue-100 flex justify-between">
+                  <div className="p-4 hover:from-black hove:to-blue-100 flex justify-between">
                     <h3>{link.name}</h3>
                     <h4>{link.annee} </h4>
                   </div>
@@ -121,7 +147,8 @@ export default class Responsive extends Component {
             </button>
           </div>
         </div>
-      </>
+        <Filter />
+      </div>
     );
   }
 }

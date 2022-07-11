@@ -89,9 +89,8 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const HeroDivSvg = styled.div`
-  margin-top: 10%;
+  margin-top: 2%;
   animation: ping;
-  width: 4rem;
 `;
 export const NavLinks = styled(LinkS)`
   color: #fff;

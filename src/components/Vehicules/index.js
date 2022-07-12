@@ -59,7 +59,7 @@ export default class Responsive extends Component {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <div className="mt-20 mb-5" id="vehicules">
+        <div className="mt-20 mb-5 mx-2" id="vehicules">
         <NavLogo />
           <div className="flex flex-row justify-between text-gray-100 rounded pt-5">
             <h2 className=" text-xl md:text-3xl mb-3 ml-5">Nos véhicules</h2>
@@ -71,18 +71,18 @@ export default class Responsive extends Component {
                 <Link to={`/NocMotors/vehicules/${link.id}`}>
                 <div className="shadow-lg rounded-lg border-2">
                   {link.type === "sell" && (
-                    <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
+                    <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg border-2">
                       A vendre
                     </p>
                   )}
                   {link.type === "rent" && (
-                    <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg">
+                    <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg border-2">
                       A louer
                     </p>
                   )}
                   <img
                     src={link.front_img}
-                    className="rounded-tl-lg rounded-tr-lg object-fit h-[300px] sm:h-[420px] w-full sm:w-[900px]"
+                    className="rounded-tl-lg rounded-tr-lg object-fit w-full h-[380px] sm:h-[400px]"
                     alt={link.name}
                   />
                   <div className="p-4 hover:from-black hove:to-blue-100 flex justify-between">

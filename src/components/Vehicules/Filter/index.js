@@ -49,16 +49,16 @@ function Filter() {
           <Link to={`/NocMotors/vehicules/${item.id}`}>
           <div className="w-full rounded hover:shadow-2xl border-2 mb-4 md:mb-0">
             {item.type === "sell" && (
-              <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
+              <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg border-2">
                 A vendre
               </p>
             )}
             {item.type === "rent" && (
-              <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg">
+              <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg border-2">
                 A louer
               </p>
             )}
-            <img src={item.img[0]} className="object-cover sm:h-[380px]" alt={item.name} />
+            <img src={item.img[0]} className="object-fit w-full sm:h-[380px]" alt={item.name} />
 
             <div className="p-3 hover:from-black hove:to-blue-100 flex justify-between">
               <h3>{item.name}</h3>

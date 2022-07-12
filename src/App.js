@@ -9,6 +9,9 @@ import Events from "./components/Events";
 import { Routes, Route } from "react-router-dom";
 import VehiculesDetail from "./components/VoituresVedettes/VehiculesDetail";
 import EventsDetail from "./components/Events/EventsDetail";
+import Footer from "./components/Footer"
+import MentionsLegales from "./components/MentionsLegales";
+import Credits from "./components/Credits"
 function App() {
   return (
     <>
@@ -22,20 +25,12 @@ function App() {
           <Route exact path="/NocMotors/contact" element={<SectionContact />} />
           <Route path="/NocMotors/vehicules/:id" element={<VehiculesDetail/>}/>
           <Route path="/NocMotors/events/:id" element={<EventsDetail/>}/>
+          <Route path="/NocMotors/infos" element={<MentionsLegales/>}/>
+          <Route path="/NocMotors/credits" element={<Credits/>}/>
         </Routes>
         <ScrollButton />
+        <Footer/>
       
-      <div className="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center px-5 py-2 text-sm text-gray-100">
-        <div className="mb-4 space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
-          <a href="#" className="mx-2.5">
-            Mentions légales
-          </a>
-          <a href="#" className="mx-2.5">
-            Credits
-          </a>
-        </div>
-        <p>&copy; Noc Motors 2022</p>
-      </div>
     </>
   );
 }

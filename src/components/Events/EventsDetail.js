@@ -17,7 +17,7 @@ const EventsDetail = () => {
   }
   return (
     <div>
-      <div className="mt-20 mb-10 mx-2 lg:mx-20" id="vehicules">
+      <div className="mt-20 mb-10 mx-2 lg:mx-[200px]" id="events">
         <div className="flex flex-row items-baseline ml-5">
           <Link to={`/NocMotors/events/`}>
             <svg
@@ -36,14 +36,14 @@ const EventsDetail = () => {
             </svg>
           </Link>
         </div>
-        <div className="gap-5 text-gray-100 mx-auto">
+        <div className="gap-5 text-gray-100">
           <div
             href="#"
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
             <img
-              className=" w-full rounded-t-lg h-auto object-cover md:w-[60%] "
-              src={DataEvents[id].front_img}
+              className=" w-full rounded-t-lg object-fit md:w-auto  h-[650px]"
+              src={DataEvents[id].front_img}  
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal" >
@@ -55,7 +55,7 @@ const EventsDetail = () => {
               </p>
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-2 space-y-2 lg:space-y-0 lg:gap-3 mb-10 mt-4">
+          <div className="lg:grid lg:grid-cols-2 lg:space-y-0 mb-10 mt-4">
             {items}
           </div>
         </div>

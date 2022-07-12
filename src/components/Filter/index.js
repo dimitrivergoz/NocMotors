@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Data from "../Data"
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom"
 function Filter() {
   const [state, setState] = useState(Data);
   const [active, setActive] = useState("first");
@@ -58,7 +58,7 @@ function Filter() {
                 A louer
               </p>
             )}
-            <img src={item.src} alt={item.name} />
+            <img src={item.img[0]} alt={item.name} />
 
             <div className="p-3 hover:from-black hove:to-blue-100 flex justify-between">
               <h3>{item.name}</h3>

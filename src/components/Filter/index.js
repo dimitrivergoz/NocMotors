@@ -1,63 +1,20 @@
 import { useState } from "react";
-
+import Data from "../Data"
+import { Link } from "react-router-dom";
 function Filter() {
-  let tout = [
-    {
-      id: 0,
-      type: "sell",
-      src: "https://vergoz.xyz/img/280sl.jpg",
-      name: "911",
-      annee: "2020",
-    },
-    {
-      id: 1,
-      type: "sell",
-      src: "https://vergoz.xyz/img/alfaromeo.jpg",
-      name: "911",
-      annee: "2020",
-    },
-    {
-      id: 2,
-      type: "rent",
-      src: "https://vergoz.xyz/img/aventador.jpg",
-      name: "911",
-      annee: "2020",
-    },
-    {
-      id: 3,
-      type: "sell",
-      src: "https://vergoz.xyz/img/ds21.jpg",
-      name: "911",
-      annee: "2020",
-    },
-    {
-      id: 4,
-      type: "rent",
-      src: "https://vergoz.xyz/img/jeepwillys.jpg",
-      name: "911",
-      annee: "2020",
-    },
-    {
-      id: 5,
-      type: "sell",
-      src: "https://vergoz.xyz/img/mustang1966.jpg",
-      name: "911",
-      annee: "2020",
-    },
-  ];
-  const [state, setState] = useState(tout);
+  const [state, setState] = useState(Data);
   const [active, setActive] = useState("first");
   const handleBtns = (e) => {
     let word = e.target.value;
     if (word === "all") {
-      setState(tout);
+      setState(Data);
       setActive("first");
     } else if (word === "rent") {
-      const filtered = tout.filter((item) => item.type === "rent");
+      const filtered = Data.filter((item) => item.type === "rent");
       setActive("Second");
       setState(filtered);
     } else if (word === "sell") {
-      const filtered = tout.filter((item) => item.type === "sell");
+      const filtered = Data.filter((item) => item.type === "sell");
       setState(filtered);
       setActive("Third");
     }
@@ -89,6 +46,7 @@ function Filter() {
       </div>
       <div class="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-1 mb-10 mx-2">
         {state.map((item) => (
+          <Link to={`/NocMotors/vehicules/${item.id}`}>
           <div class="w-full rounded hover:shadow-2xl border-2" key={item.key}>
             {item.type === "sell" && (
               <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
@@ -107,6 +65,7 @@ function Filter() {
               <h4>{item.annee}</h4>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -6,18 +6,21 @@ import VoituresVedettes from "./components/VoituresVedettes";
 import SectionContact from "./components/SectionContact";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 import Events from "./components/Events";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import VehiculesDetail from "./components/VehiculesDetail";
+import Data from "./components/Data"
 function App() {
   return (
     <>
       <Navbar />
       
         <Routes>
-          <Route path="/NocMotors" element={<Accueil />} />
-          <Route path="/NocMotors/services" element={<Services />} />
-          <Route path="/NocMotors/voitures" element={<VoituresVedettes />} />
-          <Route path="/NocMotors/events" element={<Events />} />
-          <Route path="/NocMotors/contact" element={<SectionContact />} />
+          <Route exact path="/NocMotors" element={<Accueil />} />
+          <Route exact path="/NocMotors/services" element={<Services />} />
+          <Route exact path="/NocMotors/vehicules" element={<VoituresVedettes />} />
+          <Route exact path="/NocMotors/events" element={<Events />} />
+          <Route exact path="/NocMotors/contact" element={<SectionContact />} />
+          <Route path="/NocMotors/vehicules/:id" element={<VehiculesDetail/>}/>
         </Routes>
         <ScrollButton />
       

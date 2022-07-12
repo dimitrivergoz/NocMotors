@@ -4,7 +4,7 @@ function Navbar() {
   let Links = [
     { name: "ACCUEIL", link: "/NocMotors", numero: "00" },
     { name: "SERVICES", link: "/NocMotors/services", numero: "01" },
-    { name: "VEHICULES", link: "/NocMotors/voitures", numero: "02" },
+    { name: "VEHICULES", link: "/NocMotors/vehicules", numero: "02" },
     { name: "EVENEMENTS", link: "/NocMotors/events", numero: "03" },
   ];
   let [open, setOpen] = useState(false);

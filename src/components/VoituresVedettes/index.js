@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Filter from "../Filter";
+import Data from "../Data"
 export default class Responsive extends Component {
   constructor(props) {
     super(props);
@@ -16,50 +18,6 @@ export default class Responsive extends Component {
     this.slider.slickPrev();
   }
   render() {
-    let Links = [
-      {
-        id: 0,
-        type: "sell",
-        src: "https://vergoz.xyz/img/280sl.jpg",
-        name: "911",
-        annee: "2020",
-      },
-      {
-        id: 1,
-        type: "sell",
-        src: "https://vergoz.xyz/img/alfaromeo.jpg",
-        name: "911",
-        annee: "2020",
-      },
-      {
-        id: 2,
-        type: "rent",
-        src: "https://vergoz.xyz/img/aventador.jpg",
-        name: "911",
-        annee: "2020",
-      },
-      {
-        id: 3,
-        type: "sell",
-        src: "https://vergoz.xyz/img/ds21.jpg",
-        name: "911",
-        annee: "2020",
-      },
-      {
-        id: 4,
-        type: "rent",
-        src: "https://vergoz.xyz/img/jeepwillys.jpg",
-        name: "911",
-        annee: "2020",
-      },
-      {
-        id: 5,
-        type: "sell",
-        src: "https://vergoz.xyz/img/mustang1966.jpg",
-        name: "911",
-        annee: "2020",
-      },
-    ];
     var settings = {
       infinite: false,
       speed: 500,
@@ -108,8 +66,9 @@ export default class Responsive extends Component {
 
           <div className="gap-5 text-gray-100 mx-2">
             <Slider ref={(c) => (this.slider = c)} {...settings}>
-              {Links.map((link) => (
-                <div className="shadow-lg rounded-lg border-2">
+              {Data.map((link) => (
+                <Link to={`/NocMotors/vehicules/${link.id}`}>
+                <div className="shadow-lg rounded-lg border-2" key={link.id}>
                   {link.type === "sell" && (
                     <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
                       A vendre
@@ -130,6 +89,7 @@ export default class Responsive extends Component {
                     <h4>{link.annee} </h4>
                   </div>
                 </div>
+                </Link>
               ))}
             </Slider>
           </div>

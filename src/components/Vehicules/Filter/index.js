@@ -58,7 +58,7 @@ function Filter() {
                 A louer
               </p>
             )}
-            <img src={item.img[0]} className="object-cover h-[380px]" alt={item.name} />
+            <img src={item.img[0]} className="object-cover sm:h-[380px]" alt={item.name} />
 
             <div className="p-3 hover:from-black hove:to-blue-100 flex justify-between">
               <h3>{item.name}</h3>

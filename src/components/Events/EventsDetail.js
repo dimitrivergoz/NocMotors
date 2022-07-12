@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import DataEvents from "../DataEvents";
+import NavLogo from "../navlogo";
 const EventsDetail = () => {
   const { id } = useParams();
   const elements = DataEvents[id].img;
@@ -17,7 +18,8 @@ const EventsDetail = () => {
   }
   return (
     <div>
-      <div className="mt-20 mb-10 mx-2 lg:mx-[200px]" id="events">
+      <NavLogo/>
+      <div className="mt-20 mb-10 mx-2 lg:mx-[200px] pt-5" id="events">
         <div className="flex flex-row items-baseline ml-5">
           <Link to={`/NocMotors/events/`}>
             <svg

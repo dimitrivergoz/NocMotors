@@ -82,7 +82,7 @@ export default class Responsive extends Component {
                   )}
                   <img
                     src={link.img[0]}
-                    className="rounded-tl-lg rounded-tr-lg object-cover h-[420px] w-[900px]"
+                    className="rounded-tl-lg rounded-tr-lg object-fit h-[300px] sm:h-[420px] w-full sm:w-[900px]"
                     alt={link.name}
                   />
                   <div className="p-4 hover:from-black hove:to-blue-100 flex justify-between">

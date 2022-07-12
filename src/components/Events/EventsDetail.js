@@ -12,7 +12,7 @@ const EventsDetail = () => {
         src={value}
         alt=""
         className="shadow-lg rounded-lg border-2"
-      />
+      /> 
     );
   }
   return (
@@ -42,7 +42,7 @@ const EventsDetail = () => {
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
             <img
-              className=" w-full rounded-t-lg object-fit md:w-auto  h-[650px]"
+              className=" rounded-t-lg object-fit h-[650px]"
               src={DataEvents[id].front_img}  
               alt=""
             />
@@ -55,7 +55,7 @@ const EventsDetail = () => {
               </p>
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-2 lg:space-y-0 mb-10 mt-4">
+          <div className="lg:grid lg:grid-cols-3 lg:space-y-0 mb-10 mt-4 gap-4">
             {items}
           </div>
         </div>

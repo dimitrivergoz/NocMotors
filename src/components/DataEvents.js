@@ -7,6 +7,7 @@ export default [
     img: [
       "https://vergoz.xyz/img/collab/gainsbourg.jpg",
       "https://vergoz.xyz/img/collab/gainsbourg.jpg",
+      "https://vergoz.xyz/img/collab/gainsbourg.jpg",
     ],
     st: "80 véhicules",
   },
@@ -16,6 +17,7 @@ export default [
     type: "Film",
     front_img: "https://vergoz.xyz/img/collab/incendiecouleur.jpg",
     img: [
+      "https://vergoz.xyz/img/collab/incendiecouleur.jpg",
       "https://vergoz.xyz/img/collab/incendiecouleur.jpg",
       "https://vergoz.xyz/img/collab/incendiecouleur.jpg",
     ],
@@ -29,6 +31,7 @@ export default [
     img: [
       "https://vergoz.xyz/img/collab/onemillion.jpg",
       "https://vergoz.xyz/img/collab/onemillion.jpg",
+      "https://vergoz.xyz/img/collab/onemillion.jpg",
     ],
     st: "sous-titre",
   },
@@ -38,6 +41,7 @@ export default [
     type: "Collab",
     front_img: "https://vergoz.xyz/img/collab/porscheorlinski.jpg",
     img: [
+      "https://vergoz.xyz/img/collab/porscheorlinski.jpg",
       "https://vergoz.xyz/img/collab/porscheorlinski.jpg",
       "https://vergoz.xyz/img/collab/porscheorlinski.jpg",
     ],

@@ -1,9 +1,11 @@
 import React from "react";
+import NavLogo from "../navlogo";
 function Services() {
   return (
     <>
     <div className="mt-20" id="evenements">
-        <div className="flex flex-row justify-between text-gray-100">
+    <NavLogo/>
+        <div className="flex flex-row justify-between text-gray-100 pt-5">
           <h2 className="text-xl md:text-3xl mb-3 ml-5">Nos services</h2>
         </div>
       </div>

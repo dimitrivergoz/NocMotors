@@ -1,11 +1,13 @@
 import React from "react";
 import DataEvents from "../DataEvents"
 import {Link } from "react-router-dom";
+import NavLogo from "../navlogo";
 function Events() {
   return (
     <>
       <div className="my-20" id="evenements">
-        <div className="flex flex-row justify-between text-gray-100">
+      <NavLogo/>
+        <div className="flex flex-row justify-between text-gray-100 pt-5">
           <h2 className="text-xl md:text-3xl mb-3 ml-5">Evènements</h2>
         </div>
 

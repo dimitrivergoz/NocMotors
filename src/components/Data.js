@@ -2,6 +2,7 @@ export default [
   {
     id: 0,
     type: "sell",
+    desc:"DESCRIPTION ",
     front_img: "https://vergoz.xyz/img/mvagusta.jpg",
     img: [
       "https://vergoz.xyz/img/mvagusta.jpg",
@@ -13,6 +14,7 @@ export default [
   {
     id: 1,
     type: "sell",
+    desc:"DESCRIPTION ",
     front_img: "https://vergoz.xyz/img/alfaromeo.jpg",
     "img": [
       "https://vergoz.xyz/img/328gtb.jpg",
@@ -24,6 +26,7 @@ export default [
   {
     id: 2,
     type: "rent",
+    desc:"DESCRIPTION ",
     front_img: "https://vergoz.xyz/img/aventador.jpg",
     img: [
       "https://vergoz.xyz/img/aventador.jpg",
@@ -35,6 +38,7 @@ export default [
   {
     id: 3,
     type: "sell",
+    desc:"DESCRIPTION ",
     front_img: "https://vergoz.xyz/img/ds21.jpg",
     img: [
       "https://vergoz.xyz/img/ds21.jpg",
@@ -46,6 +50,7 @@ export default [
   {
     id: 4,
     type: "rent",
+    desc:"DESCRIPTION ",
     front_img: "https://vergoz.xyz/img/280sl.jpg",
     img: [
       "https://vergoz.xyz/img/jeepwillys.jpg",
@@ -57,6 +62,7 @@ export default [
   {
     id: 5,
     type: "sell",
+    desc:"DESCRIPTION ",
     front_img: "https://vergoz.xyz/img/280sl.jpg",
     img: [
       "https://vergoz.xyz/img/mustang1966.jpg",

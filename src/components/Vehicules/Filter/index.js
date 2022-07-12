@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Data from "../Data"
+import Data from "../../Data"
 import {Link} from "react-router-dom"
 function Filter() {
   const [state, setState] = useState(Data);
@@ -44,7 +44,7 @@ function Filter() {
           A vendre
         </button>
       </div>
-      <div className="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-2  mx-2">
+      <div className="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-2  mx-2 mb-2">
         {state.map((item) => (
           <Link to={`/NocMotors/vehicules/${item.id}`}>
           <div className="w-full rounded hover:shadow-2xl border-2 mb-4 md:mb-0">

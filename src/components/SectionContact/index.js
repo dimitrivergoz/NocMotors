@@ -1,5 +1,6 @@
 import React from "react";
 import { BsInstagram } from "react-icons/md";
+import NavLogo from "../navlogo";
 function SectionContact() {
   let Links = [
     { text: "+33 6 81 XX XX XX" },
@@ -8,9 +9,10 @@ function SectionContact() {
   ];
   return (
     <>
+    <NavLogo />
       <div
         id="contact"
-        className="rounded-lg shadow-lg my-20 lg:flex lg:flex-row lg:place-self-center"
+        className="rounded-lg shadow-lg my-20 lg:flex lg:flex-row lg:place-self-center pt-5"
       >
         <div className="lg:w-3/5 w-full bg-gradient-to-r from-black to-gray-600 lg:from-black lg:via-gray-600 lg:to-transparent rounded-lg text-gray-100 p-12">
           <div className="lg:w-1/2">

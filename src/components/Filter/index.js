@@ -44,10 +44,10 @@ function Filter() {
           A vendre
         </button>
       </div>
-      <div className="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-1 mb-10 mx-2">
+      <div className="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-2  mx-2">
         {state.map((item) => (
           <Link to={`/NocMotors/vehicules/${item.id}`}>
-          <div className="w-full rounded hover:shadow-2xl border-2">
+          <div className="w-full rounded hover:shadow-2xl border-2 mb-4 md:mb-0">
             {item.type === "sell" && (
               <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
                 A vendre
@@ -58,7 +58,7 @@ function Filter() {
                 A louer
               </p>
             )}
-            <img src={item.img[0]} alt={item.name} />
+            <img src={item.img[0]} className="object-cover h-[380px]" alt={item.name} />
 
             <div className="p-3 hover:from-black hove:to-blue-100 flex justify-between">
               <h3>{item.name}</h3>

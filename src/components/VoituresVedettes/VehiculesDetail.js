@@ -11,18 +11,18 @@ const VehiculesDetail = () => {
       <img
         src={value}
         alt=""
-        className="shadow-lg rounded-lg border-2"
+        className="shadow-lg rounded-lg border-2 object-cover h-[650px]"
       />
     );
   }
   return (
     <div>
       <div className="mt-20 mb-10 mx-2 lg:mx-20" id="vehicules">
-        <div className="flex flex-row items-baseline ml-5">
+        <div className="flex flex-row items-baseline">
           <Link to={`/NocMotors/vehicules/`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7 shadow-lg rounded-lg border-2 mb-5"
+              className="h-7 w-7 shadow-lg rounded-lg border-2 mb-5 "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -49,12 +49,13 @@ const VehiculesDetail = () => {
               </p>
             )}
           </div>
+          
           <div
             href="#"
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
             <img
-              className=" w-full rounded-t-lg h-auto object-cover md:w-[60%] "
+              className=" w-full rounded-t-lg h-auto object-cover md:w-[60%]"
               src={Data[id].front_img}
               alt=""
             />
@@ -67,7 +68,7 @@ const VehiculesDetail = () => {
               </p>
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-2 space-y-2 lg:space-y-0 lg:gap-3 mb-10 mt-4">
+          <div className="lg:grid lg:grid-cols-2 space-y-2 lg:space-y-0 lg:gap-3 mb-10 mt-4 relative rounded-lg">
             {items}
           </div>
         </div>

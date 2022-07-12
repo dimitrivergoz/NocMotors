@@ -2,9 +2,9 @@ export default [
   {
     id: 0,
     type: "sell",
-    front_img: "https://vergoz.xyz/img/280sl.jpg",
+    front_img: "https://vergoz.xyz/img/mvagusta.jpg",
     img: [
-      "https://vergoz.xyz/img/280sl.jpg",
+      "https://vergoz.xyz/img/mvagusta.jpg",
       "https://vergoz.xyz/img/280sl.jpg",
     ],
     name: "911 0",
@@ -15,7 +15,7 @@ export default [
     type: "sell",
     front_img: "https://vergoz.xyz/img/alfaromeo.jpg",
     "img": [
-      "https://vergoz.xyz/img/alfaromeo.jpg",
+      "https://vergoz.xyz/img/328gtb.jpg",
       "https://vergoz.xyz/img/alfaromeo.jpg",
     ],
     name: "911 1",

@@ -14,7 +14,7 @@ function Events() {
             <Link to={`/NocMotors/events/${link.id}`}>
             <div className="shadow-lg shadow-lg rounded-lg border-2 border-grey-400 opacity-60 hover:opacity-100">
               <img
-                className="object-cover sm:w-[450px] sm:h-[500px]" 
+                className="object-cover sm:w-[450px] sm:h-[500px] w-full" 
                 src={link.front_img}
                 alt={link.name}
               />

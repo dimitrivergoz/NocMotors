@@ -11,7 +11,7 @@ const EventsDetail = () => {
       <img
         src={value}
         alt=""
-        className="shadow-lg rounded-lg border-2"
+        className="shadow-lg rounded-lg border-2 w-full sm:mb-0 mb-4"
       /> 
     );
   }
@@ -36,13 +36,14 @@ const EventsDetail = () => {
             </svg>
           </Link>
         </div>
+        
         <div className="gap-5 text-gray-100">
           <div
             href="#"
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
             <img
-              className=" rounded-t-lg object-fit h-[650px]"
+              className=" rounded-t-lg object-fit max-w-4xl w-full sm:w-auto"
               src={DataEvents[id].front_img}  
               alt=""
             />
@@ -50,8 +51,11 @@ const EventsDetail = () => {
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {DataEvents[id].name}
               </h5>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              {DataEvents[id].desc}
+             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {DataEvents[id].type}
+              </p>
+              <p className="mb-3 font-normal text-gray-200">
+              {DataEvents[id].st}
               </p>
             </div>
           </div>

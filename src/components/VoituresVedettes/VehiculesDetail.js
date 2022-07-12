@@ -11,7 +11,7 @@ const VehiculesDetail = () => {
       <img
         src={value}
         alt=""
-        className="shadow-lg rounded-lg border-2 object-cover h-[650px]"
+        className="shadow-lg rounded-lg border-2 md:object-cover md:h-[650px]"
       />
     );
   }
@@ -55,7 +55,7 @@ const VehiculesDetail = () => {
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
             <img
-              className=" w-full rounded-t-lg h-auto object-cover md:w-[60%]"
+              className=" w-full rounded-t-lg h-auto sm:object-cover md:w-[60%]"
               src={Data[id].front_img}
               alt=""
             />

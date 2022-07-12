@@ -37,7 +37,7 @@ export default class Responsive extends Component {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -82,7 +82,7 @@ export default class Responsive extends Component {
                   )}
                   <img
                     src={link.front_img}
-                    className="rounded-tl-lg rounded-tr-lg object-fit w-full h-[380px] sm:h-[400px]"
+                    className="h-[15rem] sm:h-[30em] md:h-[20em] lg:h-[15em] xl:h-[30em] w-full"
                     alt={link.name}
                   />
                   <div className="p-4 hover:from-black hove:to-blue-100 flex justify-between">

@@ -51,7 +51,6 @@ export default class Responsive extends Component {
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -68,7 +67,7 @@ export default class Responsive extends Component {
             <Slider ref={(c) => (this.slider = c)} {...settings}>
               {Data.map((link) => (
                 <Link to={`/NocMotors/vehicules/${link.id}`}>
-                <div className="shadow-lg rounded-lg border-2" key={link.id}>
+                <div className="shadow-lg rounded-lg border-2">
                   {link.type === "sell" && (
                     <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg">
                       A vendre

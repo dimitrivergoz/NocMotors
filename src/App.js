@@ -7,8 +7,8 @@ import SectionContact from "./components/SectionContact";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 import Events from "./components/Events";
 import { Routes, Route } from "react-router-dom";
-import VehiculesDetail from "./components/VehiculesDetail";
-import Data from "./components/Data"
+import VehiculesDetail from "./components/VoituresVedettes/VehiculesDetail";
+import EventsDetail from "./components/Events/EventsDetail";
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/NocMotors/events" element={<Events />} />
           <Route exact path="/NocMotors/contact" element={<SectionContact />} />
           <Route path="/NocMotors/vehicules/:id" element={<VehiculesDetail/>}/>
+          <Route path="/NocMotors/events/:id" element={<EventsDetail/>}/>
         </Routes>
         <ScrollButton />
       

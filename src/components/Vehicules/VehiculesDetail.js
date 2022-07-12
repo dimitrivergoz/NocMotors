@@ -24,7 +24,7 @@ const VehiculesDetail = () => {
           <Link to={`/NocMotors/vehicules/`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7 shadow-lg rounded-lg border-2 mb-5 "
+              className="h-7 w-7 shadow-lg rounded-lg border-2 mb-5 mt-5 sm:mt-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

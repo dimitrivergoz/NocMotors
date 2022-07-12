@@ -12,7 +12,7 @@ const VehiculesDetail = () => {
       <img
         src={value}
         alt=""
-        className="shadow-lg rounded-lg border-2 sm:object-cover sm:h-[650px]"
+        className="shadow-lg rounded-lg border-2 sm:object-cover md:h-full w-full"
       />
     );
   }
@@ -70,7 +70,7 @@ const VehiculesDetail = () => {
               </p>
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-2 space-y-2 lg:space-y-0 lg:gap-4 mb-10 mt-4 rounded-lg">
+          <div className="lg:grid md:grid-cols-2  space-y-2 lg:space-y-0 lg:gap-4 mb-10 mt-4 rounded-lg">
             {items}
           </div>
         </div>

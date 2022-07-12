@@ -65,7 +65,7 @@ export default class Responsive extends Component {
             <h2 className=" text-xl md:text-3xl mb-3 ml-5">Nos véhicules</h2>
           </div>
 
-          <div className=" text-gray-100 mx-2">
+          <div className=" text-gray-100">
             <Slider ref={(c) => (this.slider = c)} {...settings}>
               {Data.map((link) => (
                 <Link to={`/NocMotors/vehicules/${link.id}`}>

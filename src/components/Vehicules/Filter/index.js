@@ -20,7 +20,7 @@ function Filter() {
     }
   };
   return (
-    <div className="container mx-auto">
+    <div className=" mx-auto">
       <div className="filter-container my-2 sticky mx-2">
         <button
           value="all"
@@ -44,7 +44,7 @@ function Filter() {
           A vendre
         </button>
       </div>
-      <div className="lg:grid lg:grid-cols-3 space-y-2 lg:space-y-0 lg:gap-2  mx-2 mb-2">
+      <div className="md:grid lg:grid-cols-3 md:grid-cols-2 lg:space-y-0 md:gap-2 mx-2 mb-2">
         {state.map((item) => (
           <Link to={`/NocMotors/vehicules/${item.id}`}>
           <div className="w-full rounded hover:shadow-2xl border-2 mb-4 md:mb-0">
@@ -58,7 +58,7 @@ function Filter() {
                 A louer
               </p>
             )}
-            <img src={item.img[0]} className="object-fit w-full sm:h-[380px]" alt={item.name} />
+            <img src={item.img[0]} className="sm:object-cover lg:h-[450px] md:h-[300px] w-full" alt={item.name} />
 
             <div className="p-3 hover:from-black hove:to-blue-100 flex justify-between">
               <h3>{item.name}</h3>

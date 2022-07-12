@@ -81,7 +81,7 @@ export default class Responsive extends Component {
                     </p>
                   )}
                   <img
-                    src={link.img[0]}
+                    src={link.front_img}
                     className="rounded-tl-lg rounded-tr-lg object-fit h-[300px] sm:h-[420px] w-full sm:w-[900px]"
                     alt={link.name}
                   />

@@ -45,7 +45,7 @@ const EventsDetail = () => {
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
             <img
-              className=" rounded-t-lg object-fit max-h-[600px] w-full sm:w-auto"
+              className=" rounded-t-lg object-fit h-[600px] w-full sm:w-auto"
               src={DataEvents[id].front_img}  
               alt=""
             />

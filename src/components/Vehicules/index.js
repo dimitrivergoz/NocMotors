@@ -89,14 +89,14 @@ export default class Responsive extends Component {
                     {link.type === "sold" && (
                       <img
                       src={link.front_img}
-                      className="h-[15rem] grayscale sm:h-[30em] md:h-[20em] lg:h-[15em] xl:h-[30em] w-full"
+                      className="sm:object-cover grayscale lg:h-[450px] md:h-[300px] w-full"
                       alt={link.name}
                     />
                     )}
                     {link.type !== "sold" && (
                       <img
                       src={link.front_img}
-                      className="h-[15rem] sm:h-[30em] md:h-[20em] lg:h-[15em] xl:h-[30em] w-full"
+                      className="sm:object-cover lg:h-[450px] md:h-[300px] w-full"
                       alt={link.name}
                     />
                     )}

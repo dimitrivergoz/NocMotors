@@ -1,6 +1,7 @@
 import React from "react";
 import { BsInstagram } from "react-icons/md";
 import NavLogo from "../navlogo";
+import { logoblanc } from "../Style";
 function SectionContact() {
   let Links = [
     { text: "+33 6 81 XX XX XX" },
@@ -18,7 +19,7 @@ function SectionContact() {
           <div className="lg:w-1/2">
             <h3 className="text-2xl font-extrabold mb-1"></h3>
             <div className="lg:hidden flex flex-col items-center">
-              <img src={require("../../logo.svg").default} width="70%" alt="" />
+              <img src={logoblanc} width="70%" alt="" />
             </div>
             <div className="container flex align-items place-self-center">
               <svg
@@ -67,7 +68,7 @@ function SectionContact() {
           </div>
         </div>
         <div className="lg:w-2/5 w-full lg:flex lg:flex-row flex-auto hidden">
-          <img src={require("../../logo.svg").default} width="70%" alt="" />
+          <img src={logoblanc} width="70%" alt="" />
         </div>
       </div>
     </>

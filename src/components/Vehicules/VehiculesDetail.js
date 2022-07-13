@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams, Link } from "react-router-dom";
 import Data from "../Data";
 import NavLogo from "../navlogo";
+import {styleSell, styleRent, styleSold} from "../Style"
 const VehiculesDetail = () => {
   const { id } = useParams();
   const elements = Data[id].img;
@@ -16,10 +17,13 @@ const VehiculesDetail = () => {
       />
     );
   }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <NavLogo/>
-      <div className="mt-20 mb-10 mx-2 lg:mx-20 pt-5" id="vehicules">
+      <div className="mt-20 mb-10 mx-2 lg:mx-20 pt-5">
         <div className="flex flex-row items-baseline">
           <Link to={`/NocMotors/vehicules/`}>
             <svg
@@ -41,13 +45,18 @@ const VehiculesDetail = () => {
         <div className="gap-5 text-gray-100 mx-auto">
           <div>
             {Data[id].type === "sell" && (
-              <p className="absolute bg-green-600 text-black p-2 text-m rounded-tl-lg rounded-br-lg border-2">
+              <p className={styleSell}>
                 A vendre
               </p>
             )}
             {Data[id].type === "rent" && (
-              <p className="absolute bg-orange-400 text-black p-2 text-m rounded-tl-lg rounded-br-lg border-2">
+              <p className={styleRent}>
                 A louer
+              </p>
+            )}
+            {Data[id].type === "sold" && (
+              <p className={styleSold}>
+                VENDU
               </p>
             )}
           </div>
@@ -56,12 +65,24 @@ const VehiculesDetail = () => {
             href="#"
             className="flex flex-col items-center md:flex-row rounded-lg border-2 shadow-md"
           >
+            {Data[id].type === "sold" && (
+              <img
+              className=" w-full  rounded-t-lg h-auto h-[600px] sm:object-cover md:w-[60%]"
+              src={Data[id].front_img}
+              alt=""
+              />
+            )}
+            {Data[id].type !== "sold" && (
             <img
               className=" w-full rounded-t-lg h-auto h-[600px] sm:object-cover md:w-[60%]"
               src={Data[id].front_img}
               alt=""
             />
+            )}
             <div className="flex flex-col justify-between p-4 leading-normal" >
+            {Data[id].type === "sold" && (
+                <h3 className="italic underline">**Attention ce véhicule a déjà été vendu !!!**</h3>
+              )}
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {Data[id].name}
               </h5>

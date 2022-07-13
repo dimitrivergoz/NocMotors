@@ -3,7 +3,7 @@ export default [
     id: 0,
     name: "Alfa Romeo 2000",
     annee: "2020",
-    type: "rent",
+    type: "sold",
     desc:"Super Alfa Romeo 2000 ",
     vedette:"True",
     front_img: "https://vergoz.xyz/img/noc/rent/alfaromeo2000/img_alfaromeo_2000%20%281%29.jpg",

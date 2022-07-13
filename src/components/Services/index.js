@@ -1,5 +1,6 @@
 import React from "react";
 import NavLogo from "../navlogo";
+import { logoblanc } from "../Style";
 function Services() {
   return (
     <>
@@ -16,7 +17,7 @@ function Services() {
         >
           <div className="flex flex-col space-y-12 md:w-1/2">
             <h2 className="md:w-1/8 flex flex-col justify-center font-bold -mb-8">
-              <img src={require("../../logo.svg").default} width="35%" alt="" />
+              <img src={logoblanc} width="35%" alt="" />
               Que propose Noc Motors ?
             </h2>
             <p className="max-w-sm md:text-left pr-8">

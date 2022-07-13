@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Filter from "./Filter";
-import Data from "../Data"
+import Data from "../Data";
 import NavLogo from "../navlogo";
+import {styleSell, styleRent, styleSold} from "../Style"
 export default class Responsive extends Component {
   constructor(props) {
     super(props);
@@ -60,37 +61,50 @@ export default class Responsive extends Component {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         <div className="mt-20 mb-5 mx-2" id="vehicules">
-        <NavLogo />
+          <NavLogo />
           <div className="flex flex-row justify-between text-gray-100 rounded pt-5">
             <h2 className=" text-xl md:text-3xl mb-3 ml-5">Nos véhicules</h2>
           </div>
 
           <div className=" text-gray-100">
             <Slider ref={(c) => (this.slider = c)} {...settings}>
-              {Data.filter(({vedette}) => vedette === 'True').map((link) => (
+              {Data.filter(({ vedette }) => vedette === "True").map((link) => (
                 <Link to={`/NocMotors/vehicules/${link.id}`}>
-                  
-                <div className="shadow-lg rounded-lg border-2">
-                  {link.type === "sell" && (
-                    <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg border-2">
-                      A vendre
-                    </p>
-                  )}
-                  {link.type === "rent" && (
-                    <p className="absolute bg-orange-400 text-black p-2 text-m rounded-br-lg border-2">
-                      A louer
-                    </p>
-                  )}
-                  <img
-                    src={link.front_img}
-                    className="h-[15rem] sm:h-[30em] md:h-[20em] lg:h-[15em] xl:h-[30em] w-full"
-                    alt={link.name}
-                  />
-                  <div className="p-4 hover:from-black hove:to-blue-100 flex justify-between">
-                    <h3>{link.name}</h3>
-                    <h4>{link.annee} </h4>
+                  <div className="shadow-lg rounded-lg border-2">
+                    {link.type === "sell" && (
+                      <p className={styleSell}>
+                        A vendre
+                      </p>
+                    )}
+                    {link.type === "rent" && (
+                      <p className={styleRent}>
+                        A louer
+                      </p>
+                    )}
+                    {link.type === "sold" && (
+                      <p className={styleSold}>
+                        VENDU
+                      </p>
+                    )}
+                    {link.type === "sold" && (
+                      <img
+                      src={link.front_img}
+                      className="h-[15rem] grayscale sm:h-[30em] md:h-[20em] lg:h-[15em] xl:h-[30em] w-full"
+                      alt={link.name}
+                    />
+                    )}
+                    {link.type !== "sold" && (
+                      <img
+                      src={link.front_img}
+                      className="h-[15rem] sm:h-[30em] md:h-[20em] lg:h-[15em] xl:h-[30em] w-full"
+                      alt={link.name}
+                    />
+                    )}
+                    <div className="p-4 hover:from-black hove:to-blue-100 flex justify-between">
+                      <h3>{link.name}</h3>
+                      <h4>{link.annee} </h4>
+                    </div>
                   </div>
-                </div>
                 </Link>
               ))}
             </Slider>

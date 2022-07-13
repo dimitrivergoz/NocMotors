@@ -1,6 +1,7 @@
 import React from "react";
 import Video from "../../videos/video.mp4";
 import {Link } from "react-router-dom";
+import {logonoir} from "../Style"
 import {
   HeroContainer,
   HeroBg,
@@ -28,8 +29,8 @@ const Accueil = () => {
         <HeroContent>
           <img
             width={400}
-            src="https://vergoz.xyz/img/logonoir.svg"
-            alt="Logo de couleur noir"
+            src={logonoir}
+            alt="Logo de couleur noir Noc Motors"
           />
           <HeroP>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.

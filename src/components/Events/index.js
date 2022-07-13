@@ -23,7 +23,7 @@ function Events() {
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{link.name}</div>
                 <p className="text-gray-100 text-base mb-3">{link.st}</p>
-                <Link className="rounded-lg border-2 p-2" to="/NocMotors/">
+                <Link className="rounded-lg border-2 p-2" to={`/NocMotors/events/${link.id}`}>
                   {link.type}
                 </Link>
               </div>

@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Filter from "./Filter";
 import Data from "../Data";
-import NavLogo from "../navlogo";
 import {styleSell, styleRent, styleSold} from "../Style"
 export default class Responsive extends Component {
   
@@ -62,7 +61,7 @@ export default class Responsive extends Component {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         <div className="mt-20 mb-5 mx-2" id="vehicules">
-          <NavLogo />
+        
           <div className="flex flex-row justify-between text-gray-100 rounded pt-5">
             <h2 className=" text-xl md:text-3xl mb-3 ml-5">Nos véhicules</h2>
           </div>

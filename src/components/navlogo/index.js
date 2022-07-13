@@ -4,7 +4,7 @@ const NavLogo = () => {
   return (
     <>
         <div div className="absolute top-0 sm:left-10">
-            <img src={logoblanc} width="45%" alt="" />
+          <img src={logoblanc} width="45%" alt="" />
         </div>
     </>
   );

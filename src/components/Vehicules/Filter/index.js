@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Data from "../../Data";
 import { Link } from "react-router-dom";
+import SectionContact from "../../SectionContact";
 import {styleSell, styleRent, styleSold} from "../../Style"
 function Filter() {
   const [state, setState] = useState(Data);
@@ -20,7 +21,11 @@ function Filter() {
       setActive("Third");
     }
   };
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
+    <>
     <div className=" mx-auto">
       <div className="filter-container my-2 sticky mx-2">
         <button
@@ -93,6 +98,8 @@ function Filter() {
         ))}
       </div>
     </div>
+    <SectionContact/>
+    </>
   );
 }
 

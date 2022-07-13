@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NavLogo from "../navlogo";
+import SectionContact from "../SectionContact";
 import { logoblanc } from "../Style";
 function Services() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
     <div className="mt-20" id="evenements">
@@ -101,6 +105,7 @@ function Services() {
           </div>
         </div>
       </section>
+      <SectionContact/>
     </>
   );
 }

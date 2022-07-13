@@ -12,6 +12,7 @@ import EventsDetail from "./components/Events/EventsDetail";
 import Footer from "./components/Footer"
 import MentionsLegales from "./components/Footer/MentionsLegales";
 import Credits from "./components/Footer/Credits"
+import ContactPage from "./components/Contact";
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
           <Route exact path="/NocMotors/services" element={<Services />} />
           <Route exact path="/NocMotors/vehicules" element={<Vehicules />} />
           <Route exact path="/NocMotors/events" element={<Events />} />
-          <Route exact path="/NocMotors/contact" element={<SectionContact />} />
+          <Route exact path="/NocMotors/contact" element={<ContactPage />} />
           <Route path="/NocMotors/vehicules/:id" element={<VehiculesDetail/>}/>
           <Route path="/NocMotors/events/:id" element={<EventsDetail/>}/>
           <Route path="/NocMotors/infos" element={<MentionsLegales/>}/>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import DataEvents from "../DataEvents"
 import {Link } from "react-router-dom";
 import NavLogo from "../navlogo";
+import SectionContact from "../SectionContact";
 function Events() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div className="my-20" id="evenements">
@@ -32,6 +36,7 @@ function Events() {
           ))}
         </div>
       </div>
+      <SectionContact/>
     </>
   );
 }

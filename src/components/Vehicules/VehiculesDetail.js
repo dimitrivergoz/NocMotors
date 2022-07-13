@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import { useParams, Link } from "react-router-dom";
 import Data from "../Data";
 import NavLogo from "../navlogo";
+import SectionContact from "../SectionContact";
 import {styleSell, styleRent, styleSold} from "../Style"
 const VehiculesDetail = () => {
   const { id } = useParams();
@@ -21,6 +22,7 @@ const VehiculesDetail = () => {
     window.scrollTo(0, 0)
   }, [])
   return (
+    <>
     <div>
       <NavLogo/>
       <div className="mt-20 mb-10 mx-2 lg:mx-20 pt-5">
@@ -97,6 +99,8 @@ const VehiculesDetail = () => {
         </div>
       </div>
     </div>
+    <SectionContact/>
+    </>
   );
 };
 

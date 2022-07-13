@@ -8,6 +8,7 @@ import Data from "../Data";
 import NavLogo from "../navlogo";
 import {styleSell, styleRent, styleSold} from "../Style"
 export default class Responsive extends Component {
+  
   constructor(props) {
     super(props);
     this.next = this.next.bind(this);
@@ -89,14 +90,14 @@ export default class Responsive extends Component {
                     {link.type === "sold" && (
                       <img
                       src={link.front_img}
-                      className="sm:object-cover grayscale lg:h-[450px] md:h-[300px] w-full"
+                      className="sm:object-cover grayscale h-[300px] lg:h-[450px] md:h-[300px] w-full"
                       alt={link.name}
                     />
                     )}
                     {link.type !== "sold" && (
                       <img
                       src={link.front_img}
-                      className="sm:object-cover lg:h-[450px] md:h-[300px] w-full"
+                      className="sm:object-cover h-[300px] lg:h-[450px] md:h-[300px] w-full"
                       alt={link.name}
                     />
                     )}

@@ -67,8 +67,9 @@ export default class Responsive extends Component {
 
           <div className=" text-gray-100">
             <Slider ref={(c) => (this.slider = c)} {...settings}>
-              {Data.map((link) => (
+              {Data.filter(({vedette}) => vedette === 'True').map((link) => (
                 <Link to={`/NocMotors/vehicules/${link.id}`}>
+                  
                 <div className="shadow-lg rounded-lg border-2">
                   {link.type === "sell" && (
                     <p className="absolute bg-green-600 text-black p-2 text-m rounded-br-lg border-2">
